@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid Layout with Floats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .grid-container {
+            overflow: hidden; /* Clearfix to contain floated children */
+        }
+        .grid-item {
+            width: 30%; /* Approximately 3 items per row */
+            margin: 1.5%; /* Space between items */
+            background-color: #4CAF50;
+            border-radius: 5px;
+            float: left; /* Float the items to create a grid */
+            box-sizing: border-box; /* Include padding in width */
+        }
+        .grid-item img {
+            width: 100%; /* Makes the image responsive */
+            height: auto; /* Maintains aspect ratio */
+            display: block; /* Removes bottom space */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Image Grid Layout with Floats</h1>
+<div class="grid-container">
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 1"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 2"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 3"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 4"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 5"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 6"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 7"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 8"></div>
+    <div class="grid-item"><img src="./imagess/cat3.jfif" alt="Placeholder Image 9"></div>
+</div>
+
+</body>
+</html>

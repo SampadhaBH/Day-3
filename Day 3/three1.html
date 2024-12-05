@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 10px; /* space between grid items */
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: #4CAF50;
+            border-radius: 5px;
+            overflow: hidden; /* Ensures images don't overflow */
+        }
+        .grid-item img {
+            width: 100%; /* Makes the image responsive */
+            height: auto; /* Maintains aspect ratio */
+            display: block; /* Removes bottom space */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Image Grid Layout</h1>
+<div class="grid-container">
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 1"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 2"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 3"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 4"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 5"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 6"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 7"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 8"></div>
+    <div class="grid-item"><img src="./imagess/cat.jfif" alt="Placeholder Image 9"></div>
+</div>
+
+</body>
+</html>

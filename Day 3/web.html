@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="filter-container">
+        <h2>Filter Products</h2>
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+        </select>
+    </div>
+
+    <div class="product-list" id="productList">
+        <div class="product-item" data-category="electronics">
+            <img src="path/to/image1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Price: $100</p>
+        </div>
+        <div class="product-item" data-category="clothing">
+            <img src="path/to/image2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Price: $50</p>
+        </div>
+        <div class="product-item" data-category="accessories">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Price: $30</p>
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+
+    <script src="web.css"></script>
+</body>
+</html>
